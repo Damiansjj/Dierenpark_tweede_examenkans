@@ -2,7 +2,6 @@ import java.util.*;
 public class Tour {
     private String naam;
     private Set<Bezoeker.leeftijdCategorie> toegelatenLeeftijden;
-    private List<Personeel> personeelLijst = new ArrayList<>();
     private List<Bezoeker> bezoekerLijst = new ArrayList<>();
     private int maxCapaciteit;
 
@@ -10,14 +9,6 @@ public class Tour {
         this.naam = naam;
         this.toegelatenLeeftijden = toegelatenLeeftijden;
         this.maxCapaciteit = maxCapaciteit;
-    }
-
-    public boolean voegPersoneelToe(Personeel personeel) {
-        if (!personeelLijst.contains(personeel)) {
-            personeelLijst.add(personeel);
-            return true;
-        }
-        return false;
     }
 
     public boolean voegBezoekerToe(Bezoeker bezoeker) {
@@ -47,10 +38,6 @@ public class Tour {
 
     public void setToegelatenLeeftijden(Set<Bezoeker.leeftijdCategorie> toegelatenLeeftijden) {
         this.toegelatenLeeftijden = toegelatenLeeftijden;
-    }
-
-    public List<Personeel> getPersoneelLijst() {
-        return personeelLijst;
     }
 
     public int getMaxCapaciteit() {

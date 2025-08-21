@@ -20,10 +20,9 @@ public class Main {
             System.out.println("2. Nieuwe activiteit toevoegen");
             System.out.println("3. Nieuwe tour toevoegen");
             System.out.println("4. Bezoeker registreren");
-            System.out.println("5. Personeel aan tour toewijzen");
-            System.out.println("6. Personeel aan activiteit toewijzen");
-            System.out.println("7. Bezoeker inschrijven voor tour");
-            System.out.println("8. Print bezoekerslijst van tour");
+            System.out.println("5. Personeel aan activiteit toewijzen");
+            System.out.println("6. Bezoeker inschrijven voor tour");
+            System.out.println("7. Print bezoekerslijst van tour");
             System.out.println("0. Afsluiten");
             System.out.print("Kies een optie: ");
             String keuze = scanner.nextLine();
@@ -38,12 +37,10 @@ public class Main {
             } else if (keuze.equals("4")) {
                 registreerBezoeker(scanner);
             } else if (keuze.equals("5")) {
-                wijsPersoneelToe(scanner);
-            } else if (keuze.equals("6")) {
                 wijsPersoneelAanActiviteitToe(scanner);
-            } else if (keuze.equals("7")) {
+            } else if (keuze.equals("6")) {
                 inschrijvingBezoeker(scanner);
-            } else if (keuze.equals("8")) {
+            } else if (keuze.equals("7")) {
                 printTourInfo(scanner);
             } else if (keuze.equals("0")) {
                 doorgaan = false;
@@ -148,33 +145,6 @@ public class Main {
         Bezoeker bezoeker = new Bezoeker(naam, geboortedatum, adres, cat);
         bezoekerLijst.add(bezoeker);
         System.out.println("Bezoeker geregistreerd.");
-    }
-
-    // Personeel aan tour toewijzen
-    private static void wijsPersoneelToe(Scanner scanner) {
-        if (tourLijst.isEmpty() || personeelLijst.isEmpty()) {
-            System.out.println("Geen tours of personeel beschikbaar.");
-            return;
-        }
-        System.out.print("Naam van de tour: ");
-        String tourNaam = scanner.nextLine();
-        Tour tour = vindTour(tourNaam);
-        if (tour == null) {
-            System.out.println("Tour niet gevonden.");
-            return;
-        }
-        System.out.print("Naam van het personeelslid: ");
-        String personeelNaam = scanner.nextLine();
-        Personeel personeel = vindPersoneel(personeelNaam);
-        if (personeel == null) {
-            System.out.println("Personeelslid niet gevonden.");
-            return;
-        }
-        if (tour.voegPersoneelToe(personeel)) {
-            System.out.println("Personeel toegevoegd aan tour.");
-        } else {
-            System.out.println("Personeel was al toegevoegd aan deze tour.");
-        }
     }
 
     // Personeel aan activiteit toewijzen
