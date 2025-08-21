@@ -1,14 +1,13 @@
-
 import java.util.*;
 public class Tour {
-    private String Naam;
+    private String naam;
     private Set<Bezoeker.leeftijdCategorie> toegelatenLeeftijden;
     private List<Personeel> personeelLijst = new ArrayList<>();
     private List<Bezoeker> bezoekerLijst = new ArrayList<>();
     private int maxCapaciteit;
 
-    public Tour(String Naam, Set<Bezoeker.leeftijdCategorie> toegelatenLeeftijden, int maxCapaciteit) {
-        this.Naam = Naam;
+    public Tour(String naam, Set<Bezoeker.leeftijdCategorie> toegelatenLeeftijden, int maxCapaciteit) {
+        this.naam = naam;
         this.toegelatenLeeftijden = toegelatenLeeftijden;
         this.maxCapaciteit = maxCapaciteit;
     }
@@ -35,11 +34,11 @@ public class Tour {
     }
 
     public String getNaam() {
-        return Naam;
+        return naam;
     }
 
-    public void setNaam(String Naam) {
-        this.Naam = Naam;
+    public void setNaam(String naam) {
+        this.naam = naam;
     }
 
     public Set<Bezoeker.leeftijdCategorie> getToegelatenLeeftijden() {
