@@ -1,5 +1,5 @@
 public class Personeel extends Persoon{
-    public enum PersoneelType { GIDS, VERZORGER, POETSPLOEG, ANDERS }
+    public enum PersoneelType { gids, verzorger, poetsploeg, anders }
     private PersoneelType personeelType;
 
     public Personeel(String naam, String geboortedatum, String adres, PersoneelType personeelType) {
@@ -15,5 +15,3 @@ public class Personeel extends Persoon{
         this.personeelType = personeelType;
     }
 }
-
-
