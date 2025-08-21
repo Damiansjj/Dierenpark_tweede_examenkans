@@ -1,6 +1,6 @@
                     Userstories dierenpark
 
-
+Userstory: personeel
 Als beheerder
 wil ik nieuwe personeelsleden kunnen aanmaken
 zodat zij in het systeem geregistreerd zijn.
@@ -10,6 +10,7 @@ Het systeem vraagt naam en rol van het personeelslid.
 Het personeelslid wordt opgeslagen in de lijst.
 Het personeelslid is zichtbaar in het overzicht.
 
+Userstory:activiteiten
 Als beheerder
 wil ik activiteiten kunnen aanmaken
 zodat bezoekers eraan kunnen deelnemen.
@@ -19,6 +20,7 @@ Een activiteit bevat naam, beschrijving, tijd en plaats.
 Activiteit wordt opgeslagen in het systeem.
 Activiteit verschijnt in de activiteitenlijst.
 
+Userstory: tour toevoegen
 Als beheerder
 wil ik tours kunnen aanmaken
 zodat bezoekers zich kunnen inschrijven.
@@ -28,6 +30,7 @@ Een tour bevat naam, toegelaten leeftijd en maximale capaciteit.
 Tour wordt opgeslagen in het systeem.
 Tour verschijnt in print bezoekerslijst.
 
+Userstory: bezoekersregistratie
 Als bezoeker
 wil ik mij kunnen registreren
 zodat ik kan deelnemen aan tours en activiteiten.
@@ -37,6 +40,7 @@ Het systeem vraagt naam en contactgegevens.
 Bezoeker wordt opgeslagen in het systeem.
 Bezoeker verschijnt in de bezoekerslijst.
 
+Userstory: Personeel toewijzen aan activiteit
 Als beheerder
 wil ik personeel kunnen toewijzen aan een activiteit
 zodat duidelijk is wie verantwoordelijk is.
@@ -46,6 +50,7 @@ Beheerder selecteert een personeelslid.
 Personeelslid wordt gekoppeld aan een activiteit.
 Bij de activiteit staat zichtbaar welk personeelslid is toegewezen.
 
+Userstory: Bezoeker inschrijven voor tour
 Als bezoeker
 wil ik mij kunnen inschrijven voor een tour
 zodat ik kan deelnemen.
@@ -55,6 +60,7 @@ Bezoeker selecteert een tour.
 Bezoeker wordt toegevoegd aan de deelnemerslijst.
 De inschrijving wordt bevestigd.
 
+Userstory: Tourinformatie printen
 Als personeelslid
 wil ik tourinformatie kunnen printen
 zodat ik een lijst van deelnemers heb.
