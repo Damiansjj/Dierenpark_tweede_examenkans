@@ -1,0 +1,65 @@
+                    Userstories dierenpark
+
+
+Als beheerder
+wil ik nieuwe personeelsleden kunnen aanmaken
+zodat zij in het systeem geregistreerd zijn.
+
+Acceptatiecriteria:
+Het systeem vraagt naam en rol van het personeelslid.
+Het personeelslid wordt opgeslagen in de lijst.
+Het personeelslid is zichtbaar in het overzicht.
+
+Als beheerder
+wil ik activiteiten kunnen aanmaken
+zodat bezoekers eraan kunnen deelnemen.
+
+Acceptatiecriteria:
+Een activiteit bevat naam, beschrijving, tijd en plaats.
+Activiteit wordt opgeslagen in het systeem.
+Activiteit verschijnt in de activiteitenlijst.
+
+Als beheerder
+wil ik tours kunnen aanmaken
+zodat bezoekers zich kunnen inschrijven.
+
+Acceptatiecriteria:
+Een tour bevat naam, toegelaten leeftijd en maximale capaciteit.
+Tour wordt opgeslagen in het systeem.
+Tour verschijnt in print bezoekerslijst.
+
+Als bezoeker
+wil ik mij kunnen registreren
+zodat ik kan deelnemen aan tours en activiteiten.
+
+Acceptatiecriteria:
+Het systeem vraagt naam en contactgegevens.
+Bezoeker wordt opgeslagen in het systeem.
+Bezoeker verschijnt in de bezoekerslijst.
+
+Als beheerder
+wil ik personeel kunnen toewijzen aan een activiteit
+zodat duidelijk is wie verantwoordelijk is.
+
+Acceptatiecriteria:
+Beheerder selecteert een personeelslid.
+Personeelslid wordt gekoppeld aan een activiteit.
+Bij de activiteit staat zichtbaar welk personeelslid is toegewezen.
+
+Als bezoeker
+wil ik mij kunnen inschrijven voor een tour
+zodat ik kan deelnemen.
+
+Acceptatiecriteria:
+Bezoeker selecteert een tour.
+Bezoeker wordt toegevoegd aan de deelnemerslijst.
+De inschrijving wordt bevestigd.
+
+Als personeelslid
+wil ik tourinformatie kunnen printen
+zodat ik een lijst van deelnemers heb.
+
+Acceptatiecriteria:
+Systeem kan voor een tour een bestand aanmaken.
+Bestand bevat de namen van de ingeschreven bezoekers.
+Bestand wordt opgeslagen als tekstfile.
