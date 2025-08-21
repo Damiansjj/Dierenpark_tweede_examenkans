@@ -128,6 +128,10 @@ public class Main {
     private static void registreerBezoeker(Scanner scanner) {
         System.out.print("Naam: ");
         String naam = scanner.nextLine();
+        if (vindBezoeker(naam) != null) {
+            System.out.println("Bezoeker bestaat al.");
+            return;
+        }
         System.out.print("Geboortedatum: ");
         String geboortedatum = scanner.nextLine();
         System.out.print("Adres: ");
