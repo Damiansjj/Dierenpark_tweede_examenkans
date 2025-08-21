@@ -1,27 +1,25 @@
-
 import java.util.HashSet;
 import java.util.Set;
 public class Zone {
-    private int MaxCapaciteit;
+    private int maxCapaciteit;
     private Set<Activiteit> activiteiten = new HashSet<>();
 
     public Zone(int maxCapaciteit) {
-        this.MaxCapaciteit = maxCapaciteit;
+        this.maxCapaciteit = maxCapaciteit;
     }
     public boolean voegActiviteitToe(Activiteit activiteit) {
-        if (activiteiten.size() < MaxCapaciteit) {
+        if (activiteiten.size() < maxCapaciteit) {
             return activiteiten.add(activiteit);
         }
         return false; // Zone is vol
     }
     public int getMaxCapaciteit() {
-        return MaxCapaciteit;
+        return maxCapaciteit;
     }
     public void setMaxCapaciteit(int maxCapaciteit) {
-        this.MaxCapaciteit = maxCapaciteit;
+        this.maxCapaciteit = maxCapaciteit;
     }
     public Set<Activiteit> getActiviteiten() {
         return activiteiten;
     }
-
 }
