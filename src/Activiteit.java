@@ -1,13 +1,16 @@
 import java.util.Objects;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Activiteit {
     private String catergorie;
-    private String Naam;
+    private String naam;
     private String omschrijving;
+    private List<Personeel> personeelLijst = new ArrayList<>();
 
-    public Activiteit(String catergorie, String Naam, String omschrijving) {
+    public Activiteit(String catergorie, String naam, String omschrijving) {
         this.catergorie = catergorie;
-        this.Naam = Naam;
+        this.naam = naam;
         this.omschrijving = omschrijving;
     }
     public String getCatergorie() {
@@ -17,10 +20,10 @@ public class Activiteit {
         this.catergorie = catergorie;
     }
     public String getNaam() {
-        return Naam;
+        return naam;
     }
-    public void setNaam(String Naam) {
-        this.Naam = Naam;
+    public void setNaam(String naam) {
+        this.naam = naam;
     }
     public String getOmschrijving() {
         return omschrijving;
@@ -28,15 +31,26 @@ public class Activiteit {
     public void setOmschrijving(String omschrijving) {
         this.omschrijving = omschrijving;
     }
+    public boolean voegPersoneelToe(Personeel personeel) {
+        if (!personeelLijst.contains(personeel)) {
+            personeelLijst.add(personeel);
+            return true;
+        }
+        return false;
+    }
+
+    public List<Personeel> getPersoneelLijst() {
+        return personeelLijst;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Activiteit)) return false;
         Activiteit other = (Activiteit) o;
-        return catergorie.equals(other.catergorie) && Naam.equals(other.Naam);
+        return catergorie.equals(other.catergorie) && naam.equals(other.naam);
     }
     @Override
     public int hashCode() {
-        return catergorie.hashCode() + Naam.hashCode();
+        return catergorie.hashCode() + naam.hashCode();
     }
 }
